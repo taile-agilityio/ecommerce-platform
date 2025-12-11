@@ -1,5 +1,5 @@
 {
-  "name": "my-tur",
+  "name": "united-deals",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -14,7 +14,8 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "turbo run test"
   },
   "devDependencies": {
     "eslint": "^9.39.1",
