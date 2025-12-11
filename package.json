@@ -1,0 +1,40 @@
+{
+  "name": "united-deals",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "build:docs": "turbo run build --filter=docs",
+    "build:web": "turbo run build --filter=web",
+    "dev": "turbo run dev",
+    "dev:docs": "turbo run dev --filter=docs",
+    "dev:web": "turbo run dev --filter=web",
+    "start": "turbo run start",
+    "start:docs": "turbo run start --filter=docs",
+    "start:web": "turbo run start --filter=web",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "prepare": "husky",
+    "test": "turbo run test",
+    "storybook:ui": "pnpm --filter @repo/ui storybook"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "turbo": "^2.6.1",
+    "typescript": "5.9.2",
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": "npx eslint --fix --no-ignore --max-warnings=0"
+  }
+}

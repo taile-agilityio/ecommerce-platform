@@ -1,0 +1,14 @@
+{
+  "name": "@repo/jest-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./jest-setup": "./jest-setup.js",
+    "./react-internal": "./react-internal.js"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "identity-obj-proxy": "^3.0.0"
+  }
+}
