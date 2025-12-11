@@ -1,0 +1,15 @@
+@import "./global.css";
+
+:root {
+}
+
+@theme {
+}
+
+@layer utilities {
+}
+
+@layer base {
+  body {
+  }
+}
