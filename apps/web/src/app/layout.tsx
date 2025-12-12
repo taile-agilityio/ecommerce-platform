@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Poppins, Inter } from "next/font/google";
 
 // CSS variables
-import "./globals.css";
+import "./global.css";
 
 // Google Fonts with optimization
 const poppins = Poppins({
